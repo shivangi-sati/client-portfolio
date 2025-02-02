@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+
+    margin-bottom: 10px;
+    color:white;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    
+}
+
+body{
+  /* background:radial-gradient(blue ,black); */
+  /* background-color: #2C3E50; */
+  background-color: black;
+
+
+}
+.about>p{
+  letter-spacing: 2px;
+  text-indent: 10px;
+  flex-wrap: wrap;
+}
+
+#root{
+    height: 100vh;
+   
+}
+
+nav{ display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  
+   
+}
+nav >a{
+  background-color: black;
+  text-decoration: none;
+  box-shadow: 0 8px 16px 0 rgb(27, 110, 132);
+  border-radius: 4px;
+}
+
+
+#skills{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin-top:20px;
+
+}
+#skills >a{
+  font-size: 20px;
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+}
+
+
+#back-ground-img{
+  background-image:url('image1.jpg');
+  filter: blur(8px);
+  
+  height: 80%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid whitesmoke;
+}
+.ultimate-box{
+  position: relative;
+  box-shadow: 0 0 16px 0 rgb(27, 110, 132);
+  
+}
+/* .about>h1{
+  position: relative;
+  left:20%;
+  
+} */
+.about{
+  border-radius: 80px 20px;
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.4); /*Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+
+.about> img {
+  aspect-ratio: 1/1;
+}
+
+
+.cards{
+  margin-top:20px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  text-decoration: none;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 16px 0 white;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 8px white;
+    
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.9);
+    color: white;
+    transform: rotateY(180deg);
+  }
+ 
+ 
+  footer {
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   gap:50px;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, black 0%, rgb(27, 110, 132) 100%);
+    opacity: 0.4;
+   
+    
+    
+  }
+.contacts{
+  margin-top: 25px;
+  
+}
+  .container {
+    padding: 2px 16px;
+  }
+
+
+  
